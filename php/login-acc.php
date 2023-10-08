@@ -3,6 +3,9 @@ if (isset($_POST["login"])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
 
+
+    echo "trying terminal in pushing update";
+
     if (empty($password)) {
         echo "<script>alert('Please enter your password')</script>";
     } else {
