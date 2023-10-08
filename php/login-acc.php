@@ -6,6 +6,7 @@ if (isset($_POST["login"])) {
 
     echo "trying terminal in pushing update";
     echo "trying terminal in pushing update";
+    echo "trying terminal in pushing update";
 
     if (empty($password)) {
         echo "<script>alert('Please enter your password')</script>";
