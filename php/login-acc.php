@@ -30,11 +30,9 @@ if (isset($_POST["login"])) {
                     header("Location: ../dashboard.php"); // Redirect to dashboard
                     exit(); // Terminate script
                 } else {
-                    // Passwords do not match, the user-provided password is incorrect
                     echo "<script>alert('Incorrect password')</script>";
                 }
             } else {
-                // Email not found in the database
                 echo "<script>alert('Email not registered')</script>";
             }
         } catch (PDOException $e) {
